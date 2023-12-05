@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee ☕</title>
+    <style>
+      body {
+        background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+        color: maroon;
+      }
+      h1 {
+        text-align: center;
+        color: #7b3f00;
+        font-weight: bolder;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid white;
+        padding: 17px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        border-radius: 15px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 20px;
+        color: maroon;
+        margin: 20px 0 10px;
+      }
+      button {
+        color: maroon;
+        border-radius: 20px;
+        border: none;
+        background: bisque;
+        padding: 8px 8px;
+        display: block;
+        margin: 0 auto 30px;
+        box-shadow: 5px 5px 8px;
+        transition: all 200ms case-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: grab;
+      }
+      .footer {
+        text-align: center;
+        font-size: 15px;
+        color: saddlebrown;
+      }
+      .learn-more {
+        color: antiquewhite;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 20px;
+        display: inline-block;
+        text-align: center;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .page {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <h1>
+        <strong> Coffee Chronicles☕ </strong>
+      </h1>
+      <h2>
+        <em> You Can Never Go Wrong With A Fresh Cup of Warm Coffee🙂 </em>
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/553/original/coffee.jpg?1693710526"
+        alt="Coffee"
+      />
+      <br />
+      <p>
+        Coffee is a beverage prepared from roasted coffee beans. Darkly colored,
+        bitter, and slightly acidic, coffee has a stimulating effect on humans,
+        primarily due to its caffeine content. It has the highest sales in the
+        world market for hot drinks.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Coffee"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more here!
+      </a>
+      <span> 👈There's enough coffee for everyone! </span>
+      <hr />
+      <button class="buy-button">Try A Sample☕</button>
+      <p class="footer">This page was built by Deyana Wesley.</p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("Do you have an email?");
+        if (email === "yes") {
+          alert("You are eligible for a free sample of coffee!😁");
+        } else {
+          alert("Sorry, you're not eligible for a free sample. ☹️");
+        }
+        let favorite = prompt("What is your favorite coffee?");
+
+        alert(
+          "Thank you," +
+            " " +
+            name +
+            "! If you're eligible for a free sample, we will be reaching out to you soon! "
+        );
+      }
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
